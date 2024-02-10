@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 + p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #ccc;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field input[type="text"] {
+    width: calc(100% - 60px);
+    padding: 10px;
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.input-field input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+.input-field button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.input-field button:hover {
+    background-color: #0056b3;
+}
+
+.task-btn {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.task-btn:hover {
+    color: #0056b3;
+}
+
+.task-btn.delete-btn {
+    color: #ff5f5f;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+#noIncompleteTaskMessage,
+#noCompleteTaskMessage {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+
+/* Small screens (mobile devices) */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    text-align: center;
+}
