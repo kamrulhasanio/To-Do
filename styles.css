@@ -131,10 +131,9 @@ section h3 {
 /*font styles*/
 @font-face {
     font-family: 'KaiyumSajidahScheherazade';
-    src: url('https://github.com/Personal-Archives-for-KH/font/raw/main/Kaiyum%2BSajidah%2BScheherazade.ttf') format('truetype');
+    src: url('Kaiyum+Sajidah+Scheherazade.ttf') format('truetype');
 }
 
 body, h1, h2, h3, p, input[type="text"], button {
     font-family: 'KaiyumSajidahScheherazade', sans-serif;
 }
-
