@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Simple To-Do App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
-      <h1>Simple To-Do App</h1>
+        <h1>Simple To-Do App</h1>
         <p>Stay focused on your daily tasks effortlessly with our simple to-do app designed for quick organization and productivity.</p>
-    <section id="input">
-      <h3>Add Task Here</h3>
-        <div class="input-field">
-            <input type="text" id="taskInput" placeholder="Add new task">
-            <button id="addTaskBtn">Add</button>
-        </div>
-    </section>
+        <section id="input">
+            <h3>Add Task Here</h3>
+            <div class="input-field">
+                <input type="text" id="taskInput" placeholder="Add new task">
+                <button id="addTaskBtn">Add</button>
+            </div>
+        </section>
 
-    <section id="incomplete">
-        <h3>Incomplete Tasks</h3>
-        <ul id="incompleteTasks" class="task-list"></ul>
-        <p id="noIncompleteTaskMessage" style="display: none;">No incomplete tasks.</p>
-    </section>
+        <section id="incomplete">
+            <h3>Incomplete Tasks</h3>
+            <ul id="incompleteTasks" class="task-list"></ul>
+            <p id="noIncompleteTaskMessage" style="display: none;">No incomplete tasks.</p>
+        </section>
 
-    <section id="complete">
-        <h3> Complete Tasks</h3>
-        <ul id="completeTasks" class="task-list"></ul>
-        <p id="noCompleteTaskMessage" style="display: none;">No completed tasks.</p>
-    </section>
-</div>
+        <section id="complete">
+            <h3> Complete Tasks</h3>
+            <ul id="completeTasks" class="task-list"></ul>
+            <p id="noCompleteTaskMessage" style="display: none;">No completed tasks.</p>
+        </section>
+    </div>
+
+    <div class="floating-buttons">
+        <button id="sourceCodeBtn"><i class="fas fa-code"></i></button>
+        <button id="clearCacheBtn"><i class="fas fa-sync-alt"></i></button>
+    </div>
 
     <script src="script.js"></script>
 </body>
