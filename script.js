@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     var completeTasks = document.getElementById("completeTasks");
     var noIncompleteTaskMessage = document.getElementById("noIncompleteTaskMessage");
     var noCompleteTaskMessage = document.getElementById("noCompleteTaskMessage");
+    var sourceCodeBtn = document.getElementById("sourceCodeBtn");
+    var clearCacheBtn = document.getElementById("clearCacheBtn");
     var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
     function renderTasks() {
@@ -86,4 +88,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     renderTasks();
+
+    sourceCodeBtn.addEventListener("click", function() {
+        window.open('https://github.com/kamrulhasanio/To-Do', '_blank');
+    });
+
+    clearCacheBtn.addEventListener("click", function() {
+        var confirmClear = confirm("Are you sure you want to clear the cache?");
+        if (confirmClear) {
+            localStorage.clear();
+            alert('Cache cleared successfully.');
+            location.reload();
+        }
+    });
 });
