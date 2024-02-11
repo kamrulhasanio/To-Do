@@ -1,5 +1,5 @@
 body {
-    font-family: 'KaiyumSajidahScheherazade', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #000;
     color: #fff;
     margin: 0;
@@ -128,12 +128,32 @@ section h3 {
     padding-bottom: 5px;
     text-align: center;
 }
-/*font styles*/
-@font-face {
-    font-family: 'KaiyumSajidahScheherazade';
-    src: url('Kaiyum+Sajidah+Scheherazade.ttf') format('truetype');
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-body, h1, h2, h3, p, input[type="text"], button {
-    font-family: 'KaiyumSajidahScheherazade', sans-serif;
+.floating-buttons button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.floating-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.floating-buttons i {
+    font-size: 20px;
 }
